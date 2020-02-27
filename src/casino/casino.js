@@ -14,10 +14,10 @@ function solution(n, k) {
     
     while (chips != 1) {
         if (thisNumberIsPar(chips) && k > 0) {
-            chips = chips / 2;
+            chips /= 2;
             k = k-1;
         } else {
-            chips = chips-1;
+            chips -= 1;
         }
     
         rounds++;
